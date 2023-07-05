@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    >
+
+    <TextView
+        android:id="@+id/tvDisplayName"
+        android:layout_width="54dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="28dp"
+        android:text="Jemima"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Nyaguthii"
+        app:layout_constraintStart_toEndOf="@+id/tvDisplayName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTweet"
+        android:layout_width="253dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:text="hello am jemima nyaguthii,a student at akirachix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplayName" />
+
+    <TextView
+        android:id="@+id/tvCommentCount"
+        android:layout_width="32dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="184dp"
+        android:text="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvRtCount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvRtCount"
+        android:layout_width="14dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="40dp"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@+id/tvLikeCount"
+        app:layout_constraintTop_toBottomOf="@+id/tvHandle" />
+
+    <TextView
+        android:id="@+id/tvLikeCount"
+        android:layout_width="42dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="176dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="112dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTweet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagee" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
